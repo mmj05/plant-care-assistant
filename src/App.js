@@ -1,6 +1,6 @@
 import React from 'react';
-import PlantForm from './components/PlantForm';
-import PlantList from './components/PlantList';
+import PlantForm from './components/PlantForm/PlantForm';
+import PlantList from './components/PlantList/PlantList';
 
 const App = () => {
   return (

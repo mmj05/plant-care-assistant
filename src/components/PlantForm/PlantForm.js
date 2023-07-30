@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addPlant } from '../features/plant/plantSlice';
+import { addPlant } from '../../features/plant/plantSlice';
+import './PlantForm.css';
 
 const PlantForm = () => {
   const [plantName, setPlantName] = useState('');
@@ -19,7 +20,7 @@ const PlantForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-container" onSubmit={handleSubmit}>
       <label>
         Plant Name:
         <input
